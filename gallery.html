@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  
+  <div class="container-fluid" style="padding: 0px;overflow: hidden;">
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="images/top.png" width="100%" alt="">
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <!-- Logo (Mobile Only) -->
+    <a class="navbar-brand d-lg-none" href="index.html">
+      <img src="images/mainlogo.png" loading="lazy" alt="Logo" class="navbar-logo">
+    </a>
+
+    <!-- Hamburger (sidebar trigger) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse justify-content-center d-none d-lg-block">
+      <ul class="navbar-nav w-100 justify-content-center">
+        <!-- Left Menu -->
+        <li class="nav-item"><a class="nav-link"   href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+
+        <!-- Dropdown for OUR PARTNERS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle left-gap" href="#" id="partnersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            EXHIBITORS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="partnersDropdown">
+            <li><a class="dropdown-item" href="exhibitors.html">EXHIBITORS</a></li>
+            <li><a class="dropdown-item" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+            <li><a class="dropdown-item" href="images/broucher.pdf">BROCHURE</a></li>
+          </ul>
+        </li>
+
+        <!-- Center Logo -->
+        
+
+        <!-- Right Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle left-gap" href="#" id="partnersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            VISITORS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="partnersDropdown">
+            <li><a class="dropdown-item" href="visitors.html">VISITORS</a></li>
+            <li><a class="dropdown-item" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+            <li><a class="dropdown-item" href="images/broucher.pdf">BROCHURE</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+  <a class="nav-link right-gap" href="sponsership.html">
+    SPONSORSHIP
+  </a>
+</li>
+
+
+          <a class="nav-link right-gap" style="background-color: #ff6100;color: white;" href="gallery.html">
+    GALLERY
+  </a>
+</li>
+        <li class="nav-item"><a class="nav-link"  href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Offcanvas Menu -->
+<!-- ✅ Mobile Offcanvas Menu -->
+<div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">
+      <img src="images/mainlogo.png" loading="lazy" width="100px" alt="Logo">
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link text-dark" href="index.html">HOME</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="about.html">ABOUT US</a></li>
+
+      <!-- ✅ EXHIBITORS Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="mobileExhibitorsDropdown"
+           role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          EXHIBITORS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="mobileExhibitorsDropdown">
+          <li><a class="dropdown-item text-dark" href="exhibitors.html">EXHIBITORS</a></li>
+          <li><a class="dropdown-item text-dark" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+          <li><a class="dropdown-item text-dark" href="images/broucher.pdf">BROCHURE</a></li>
+        </ul>
+      </li>
+
+      <!-- ✅ VISITORS Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="mobileVisitorsDropdown"
+           role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          VISITORS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="mobileVisitorsDropdown">
+          <li><a class="dropdown-item text-dark" href="visitors.html">VISITORS</a></li>
+          <li><a class="dropdown-item text-dark" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+          <li><a class="dropdown-item text-dark" href="images/broucher.pdf">BROCHURE</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a class="nav-link text-dark" href="sponsership.html">SPONSORSHIP</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="gallery.html">GALLERY</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container-fluid" style="padding: 0px;overflow: hidden;">
+  <div class="row">
+    <div class="col-lg-12">
+      <img src="images/contactban.png" loading="lazy" width="100%" alt="">
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" style="padding: 0px;overflow: hidden;">
+  <div class="row">
+    <div class="col-lg-12">
+      <img src="images/galba.jpeg" loading="lazy"  width="100%"  alt="">
+    </div>
+  </div>
+</div>
+
+
+
+<section class="gallery-section py-5 mt-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Gallery Showcase</h2>
+    
+    <div class="row g-3 mt-4">
+
+      <!-- Repeat 16 cards -->
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/efour.jpg" loading="lazy"  alt="">
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/ione.webp" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/ithree.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/vfive.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/vfour.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/vfour.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/vfive.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/vone.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/vsix.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/vthree.webp" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/vtwo.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/expogal.webp" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/expotwo.avif" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 14 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/ithree.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 15 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/expothree.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 16 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/expofour.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+       <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/vfour.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/vfive.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/vone.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="col-lg-3 col-md-4 col-6 gallery-item">
+        <div class="gallery-box">
+          <img src="images/vsix.jpg" loading="lazy" alt="">
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+     
+
+    </div>
+  </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row footer-wrapper g-4">
+
+            <!-- LEFT SECTION -->
+            <div class="col-lg-4 col-md-12">
+                <img src="images/mainlogo.png" class="footer-logo">
+                <p class="footer-desc">
+                    IndTech Expo 2026 is India’s premier technology innovation showcase, uniting industry leaders, manufacturers, engineers, innovators, and decision-makers under one roof.
+                </p>
+
+                <div class="social-icons mt-3">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- USEFUL LINKS -->
+            <div class="col-lg-2 col-md-6">
+                <h4 class="footer-title">Useful Links</h4>
+                <div class="footer-title-line"></div>
+
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="exhibitors.html">Exhibitors</a>
+                    <a href="visitors.html">Visitors</a>
+                    <a href="sponsorship.html">Sponsership</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="footer-title">Contact Us</h4>
+                <div class="footer-title-line"></div>
+
+                <div class="contact-item">
+                    <i class="bi bi-telephone"></i>  +917406213221 
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-telephone"></i>  +080 23238677
+                </div>
+
+                <div class="contact-item">
+                    <i class="bi bi-envelope"></i>  yuvajaguar@gmail.com
+                </div>
+
+                <h5 class="footer-title mt-4">GALLERY</h5>
+                <div class="footer-title-line"></div>
+
+                <div class="app-btn">
+                    <img src="images/efour.jpg">
+                    <img src="images/ione.webp">
+                    <img src="images/ithree.jpg">
+                </div>
+            </div>
+
+            <!-- GOOGLE MAP -->
+            <div class="col-lg-3 col-md-12 footer-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.861799683565!2d72.616!3d21.200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2z!5e0!3m2!1sen!2sin!4v170122233" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+          © IndTecExpo All Rights Reserved.</b> |  
+        Design & Promote by <b>Tech Mayon</b>
+    </div>
+</footer>
+
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+ 
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  
+  <div class="container-fluid" style="padding: 0px;overflow: hidden;">
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="images/top.png" width="100%" alt="">
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <!-- Logo (Mobile Only) -->
+    <a class="navbar-brand d-lg-none" href="index.html">
+      <img src="images/mainlogo.png" loading="lazy" alt="Logo" class="navbar-logo">
+    </a>
+
+    <!-- Hamburger (sidebar trigger) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse justify-content-center d-none d-lg-block">
+      <ul class="navbar-nav w-100 justify-content-center">
+        <!-- Left Menu -->
+        <li class="nav-item"><a class="nav-link"   href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+
+        <!-- Dropdown for OUR PARTNERS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle left-gap" href="#" id="partnersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            EXHIBITORS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="partnersDropdown">
+            <li><a class="dropdown-item" href="exhibitors.html">EXHIBITORS</a></li>
+            <li><a class="dropdown-item" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+            <li><a class="dropdown-item" href="images/broucher.pdf">BROCHURE</a></li>
+          </ul>
+        </li>
+
+        <!-- Center Logo -->
+        
+
+        <!-- Right Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle left-gap" href="#" id="partnersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            VISITORS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="partnersDropdown">
+            <li><a class="dropdown-item" href="visitors.html">VISITORS</a></li>
+            <li><a class="dropdown-item" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+            <li><a class="dropdown-item" href="images/broucher.pdf">BROCHURE</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+  <a class="nav-link right-gap" style="background-color: #ff6100;color: white;" href="sponsership.html">
+    SPONSORSHIP
+  </a>
+</li>
+
+
+          <a class="nav-link right-gap" href="gallery.html">
+    GALLERY
+  </a>
+</li>
+        <li class="nav-item"><a class="nav-link"  href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Offcanvas Menu -->
+<!-- ✅ Mobile Offcanvas Menu -->
+<div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">
+      <img src="images/mainlogo.png" loading="lazy" width="100px" alt="Logo">
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link text-dark" href="index.html">HOME</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="about.html">ABOUT US</a></li>
+
+      <!-- ✅ EXHIBITORS Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="mobileExhibitorsDropdown"
+           role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          EXHIBITORS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="mobileExhibitorsDropdown">
+          <li><a class="dropdown-item text-dark" href="exhibitors.html">EXHIBITORS</a></li>
+          <li><a class="dropdown-item text-dark" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+          <li><a class="dropdown-item text-dark" href="images/broucher.pdf">BROCHURE</a></li>
+        </ul>
+      </li>
+
+      <!-- ✅ VISITORS Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="mobileVisitorsDropdown"
+           role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          VISITORS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="mobileVisitorsDropdown">
+          <li><a class="dropdown-item text-dark" href="visitors.html">VISITORS</a></li>
+          <li><a class="dropdown-item text-dark" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+          <li><a class="dropdown-item text-dark" href="images/broucher.pdf">BROCHURE</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a class="nav-link text-dark" href="sponsership.html">SPONSORSHIP</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="gallery.html">GALLERY</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container-fluid" style="padding: 0px;overflow: hidden;">
+  <div class="row">
+    <div class="col-lg-12">
+      <img src="images/sponban.png" loading="lazy" width="100%" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <section class="hero-section text-center">
+    <div class="container position-relative">
+      <span class="badge  px-3 py-2 mb-3" style="background-color: #ff6100;">SPONSORSHIP 2026</span>
+      <h1 class="hero-title">Benefits of Sponsorship</h1>
+      <p class="subtitle mt-3">Increase your brand influence and connect with key decision-makers in industrial
+        automation, manufacturing technology, robotics, and smart factory innovations.</p>
+    </div>
+</section>
+
+<!-- BENEFITS SECTION -->
+<section class="container benefit-grid py-5">
+    <h2 class="section-title">Why Sponsor IndTech Expo 2026?</h2>
+
+    <div class="row g-4 mt-4">
+
+      <!-- CARD 1 -->
+      <div class="col-md-4 fade-up">
+        <div class="benefit-card">
+          <div class="icon-box"><i class="bi bi-bullseye"></i></div>
+          <h4 class="fw-bold">Industrial Brand Elevation</h4>
+          <p class="text-secondary">
+            Position your company as a leader in industrial machinery, automation, robotics, and advanced manufacturing.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-md-4 fade-up">
+        <div class="benefit-card">
+          <div class="icon-box"><i class="bi bi-person-lines-fill"></i></div>
+          <h4 class="fw-bold">Access to Key Decision-Makers</h4>
+          <p class="text-secondary">
+            Direct engagement with factory owners, plant heads, CTOs, industrial buyers, procurement teams, and engineers.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-md-4 fade-up">
+        <div class="benefit-card">
+          <div class="icon-box"><i class="bi bi-activity"></i></div>
+          <h4 class="fw-bold">Live Technology Demonstrations</h4>
+          <p class="text-secondary">
+            Showcase automation systems, robotics, IoT devices, smart machines, and Industry 4.0 solutions in real-time.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-md-4 fade-up">
+        <div class="benefit-card">
+          <div class="icon-box"><i class="bi bi-megaphone"></i></div>
+          <h4 class="fw-bold">High-Impact Media Promotion</h4>
+          <p class="text-secondary">
+            Get featured in expo videos, industrial magazines, digital campaigns, engineering forums, and B2B platforms.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="col-md-4 fade-up">
+        <div class="benefit-card">
+          <div class="icon-box"><i class="bi bi-globe2"></i></div>
+          <h4 class="fw-bold">Global Industrial Reach</h4>
+          <p class="text-secondary">
+            Meet delegates and technology buyers from Germany, Japan, UAE, Singapore, China, and emerging industrial markets.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="col-md-4 fade-up">
+        <div class="benefit-card">
+          <div class="icon-box"><i class="bi bi-diagram-3"></i></div>
+          <h4 class="fw-bold">Strategic Partnership Growth</h4>
+          <p class="text-secondary">
+            Build alliances with OEMs, component manufacturers, automation companies, industrial distributors, and suppliers.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="col-md-4 fade-up">
+        <div class="benefit-card">
+          <div class="icon-box"><i class="bi bi-stars"></i></div>
+          <h4 class="fw-bold">Technology Leadership Credibility</h4>
+          <p class="text-secondary">
+            Strengthen your position as an innovation-driven brand in robotics, digital manufacturing, and industrial automation.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="col-md-4 fade-up">
+        <div class="benefit-card">
+          <div class="icon-box"><i class="bi bi-bar-chart-line-fill"></i></div>
+          <h4 class="fw-bold">High-Quality Lead Generation</h4>
+          <p class="text-secondary">
+            Gain verified B2B inquiries from factory owners, engineers, integrators, and automation solution seekers.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 9 -->
+      <div class="col-md-4 fade-up">
+        <div class="benefit-card">
+          <div class="icon-box"><i class="bi bi-lightning-charge"></i></div>
+          <h4 class="fw-bold">Launch New Industrial Innovations</h4>
+          <p class="text-secondary">
+            Present new machinery, automation software, AI-enabled tools, or robotics solutions to a highly targeted audience.
+          </p>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+
+
+  <section class="agri-sponsor-section">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Left Content -->
+        <div class="col-md-6 agri-sponsor-content">
+          <i class="fas fa-handshake"></i>
+          <h2>Become a Sponsor at Garments Machinery & Tec Expo 2026</h2>
+          <p>Join India’s most influential garments and textile machinery event. Sponsorship at Garments Machinery & Tec
+            Expo 2026 gives your brand unmatched exposure among manufacturers, exporters, apparel brands, and industry
+            leaders shaping the future of garment production and textile innovation.</p>
+          <p>Fill in your details below to discover exclusive sponsorship opportunities that elevate your brand
+            visibility, generate quality leads, and strengthen your presence in the growing apparel and textile
+            machinery market.</p>
+
+          <p></p>
+        </div>
+
+        <!-- Right Form -->
+        <div class="col-md-6">
+          <div class="agri-sponsor-form">
+            <h4>Sponsorship Enquiry Form</h4>
+            <form id="sponsorForm">
+              <div class="mb-3">
+                <input type="text" class="form-control agri-sponsor-input" id="fullName" placeholder="Full Name"
+                  required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control agri-sponsor-input" id="email" placeholder="Email Address"
+                  required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control agri-sponsor-input" id="companyName" placeholder="Company Name"
+                  required>
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control agri-sponsor-input" id="phone" placeholder="Phone Number"
+                  required>
+              </div>
+              <div class="mb-3">
+                <select class="form-control agri-sponsor-input" id="sponsorType" required>
+                  <option value="">Select Sponsorship Type</option>
+                  <option>Platinum Sponsor</option>
+                  <option>Gold Sponsor</option>
+                  <option>Silver Sponsor</option>
+                  <option>Exhibitor Partner</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control agri-sponsor-input" id="message" rows="4"
+                  placeholder="Message or Enquiry"></textarea>
+              </div>
+              <button type="submit" class="agri-sponsor-btn">Submit Request</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+<footer style="margin-top: 5rem;">
+    <div class="container">
+        <div class="row footer-wrapper g-4">
+
+            <!-- LEFT SECTION -->
+            <div class="col-lg-4 col-md-12">
+                <img src="images/mainlogo.png" class="footer-logo">
+                <p class="footer-desc">
+                    IndTech Expo 2026 is India’s premier technology innovation showcase, uniting industry leaders, manufacturers, engineers, innovators, and decision-makers under one roof.
+                </p>
+
+                <div class="social-icons mt-3">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- USEFUL LINKS -->
+            <div class="col-lg-2 col-md-6">
+                <h4 class="footer-title">Useful Links</h4>
+                <div class="footer-title-line"></div>
+
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="exhibitors.html">Exhibitors</a>
+                    <a href="visitors.html">Visitors</a>
+                    <a href="sponsorship.html">Sponsership</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="footer-title">Contact Us</h4>
+                <div class="footer-title-line"></div>
+
+                <div class="contact-item">
+                    <i class="bi bi-telephone"></i>  +917406213221 
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-telephone"></i>  +080 23238677
+                </div>
+
+                <div class="contact-item">
+                    <i class="bi bi-envelope"></i>  yuvajaguar@gmail.com
+                </div>
+
+                <h5 class="footer-title mt-4">GALLERY</h5>
+                <div class="footer-title-line"></div>
+
+                <div class="app-btn">
+                    <img src="images/efour.jpg">
+                    <img src="images/ione.webp">
+                    <img src="images/ithree.jpg">
+                </div>
+            </div>
+
+            <!-- GOOGLE MAP -->
+            <div class="col-lg-3 col-md-12 footer-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.861799683565!2d72.616!3d21.200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2z!5e0!3m2!1sen!2sin!4v170122233" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+          © IndTecExpo All Rights Reserved.</b> |  
+        Design & Promote by <b>Tech Mayon</b>
+    </div>
+</footer>
+
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    
+    // Initialize EmailJS
+    emailjs.init("KMyyQryEe215wzBPG"); // 🔹 Replace with your EmailJS public key
+
+    // Handle form submission
+    document.getElementById("sponsorForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Collect form data
+      const templateParams = {
+        fullName: document.getElementById("fullName").value,
+        email: document.getElementById("email").value,
+        companyName: document.getElementById("companyName").value,
+        phone: document.getElementById("phone").value,
+        sponsorType: document.getElementById("sponsorType").value,
+        message: document.getElementById("message").value,
+      };
+
+      console.log("Sending data:", templateParams); // ✅ Debug log
+
+      // Send email via EmailJS
+      emailjs.send("service_0zhux7b", "template_0uj364j", templateParams)
+        .then(function (response) {
+          alert(" Thank you for contacting us. We will get back to you soon.");
+          document.getElementById("sponsorForm").reset();
+        }, function (error) {
+          alert(" Failed to send email: " + JSON.stringify(error));
+          console.error("EmailJS Error:", error);
+        });
+    });
+  </script>
+ 
+</body>
+</html>

@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  
+  <div class="container-fluid" style="padding: 0px;overflow: hidden;">
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="images/top.png" width="100%" alt="">
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <!-- Logo (Mobile Only) -->
+    <a class="navbar-brand d-lg-none" href="index.html">
+      <img src="images/mainlogo.png" loading="lazy" alt="Logo" class="navbar-logo">
+    </a>
+
+    <!-- Hamburger (sidebar trigger) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse justify-content-center d-none d-lg-block">
+      <ul class="navbar-nav w-100 justify-content-center">
+        <!-- Left Menu -->
+        <li class="nav-item"><a class="nav-link" style="background-color: #ff6100;color: white;"  href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link"  href="about.html">ABOUT US</a></li>
+
+        <!-- Dropdown for OUR PARTNERS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle left-gap" href="#" id="partnersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            EXHIBITORS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="partnersDropdown">
+            <li><a class="dropdown-item" href="exhibitors.html">EXHIBITORS</a></li>
+            <li><a class="dropdown-item" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+            <li><a class="dropdown-item" href="images/broucher.pdf">BROCHURE</a></li>
+          </ul>
+        </li>
+
+        <!-- Center Logo -->
+        
+
+        <!-- Right Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle left-gap" href="#" id="partnersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            VISITORS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="partnersDropdown">
+            <li><a class="dropdown-item" href="visitors.html">VISITORS</a></li>
+            <li><a class="dropdown-item" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+            <li><a class="dropdown-item" href="images/broucher.pdf">BROCHURE</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+  <a class="nav-link right-gap" href="sponsership.html">
+    SPONSORSHIP
+  </a>
+</li>
+
+
+          <a class="nav-link right-gap" href="gallery.html">
+    GALLERY
+  </a>
+</li>
+        <li class="nav-item"><a class="nav-link"  href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Offcanvas Menu -->
+<!-- ✅ Mobile Offcanvas Menu -->
+<div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">
+      <img src="images/mainlogo.png" loading="lazy" width="100px" alt="Logo">
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link text-dark" href="index.html">HOME</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="about.html">ABOUT US</a></li>
+
+      <!-- ✅ EXHIBITORS Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="mobileExhibitorsDropdown"
+           role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          EXHIBITORS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="mobileExhibitorsDropdown">
+          <li><a class="dropdown-item text-dark" href="exhibitors.html">EXHIBITORS</a></li>
+          <li><a class="dropdown-item text-dark" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+          <li><a class="dropdown-item text-dark" href="images/broucher.pdf">BROCHURE</a></li>
+        </ul>
+      </li>
+
+      <!-- ✅ VISITORS Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="mobileVisitorsDropdown"
+           role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          VISITORS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="mobileVisitorsDropdown">
+          <li><a class="dropdown-item text-dark" href="visitors.html">VISITORS</a></li>
+          <li><a class="dropdown-item text-dark" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+          <li><a class="dropdown-item text-dark" href="images/broucher.pdf">BROCHURE</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a class="nav-link text-dark" href="sponsership.html">SPONSORSHIP</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="gallery.html">GALLERY</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container-fluid" style="padding: 0px;overflow: hidden;">
+  <div class="row">
+    <div class="col-lg-12">
+      <img src="images/contactban.png" loading="lazy" width="100%" alt="">
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" style="padding: 0px;overflow: hidden;">
+  <div class="row">
+    <div class="col-lg-12">
+      <img src="images/galba.jpeg" loading="lazy"  width="100%"  alt="">
+    </div>
+  </div>
+</div>
+
+<section class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <!-- LEFT SIDE IMAGE -->
+      <div class="col-lg-6">
+        <div class="about-image-wrapper">
+          <img src="images/expogal.webp" alt="IndTech Expo 2026" class="img-fluid about-img">
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE CONTENT -->
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3 badge" style="background-color: #06162f;font-size: 25px;">About IndTech Expo 2026</h2>
+
+        <p class="about-para">
+          IndTech Expo 2026 is India’s premier platform showcasing cutting-edge
+          industrial technologies, automation, machinery, tools, and next-gen
+          manufacturing innovations. The expo brings together industry leaders,
+          manufacturers, suppliers, engineers, and decision-makers under one roof.The event serves as a powerful hub for technology exchange, business networking, product demonstrations, and knowledge sharing. With a strong focus on Industry 4.0, smart manufacturing, robotics, material handling, digital production systems, and sustainable industrial solutions, the expo empowers companies to accelerate growth and stay competitive in a rapidly evolving market.Visitors can experience live machinery demos, discover breakthrough technologies, interact with global brands, attend technical sessions, and unlock new sourcing opportunities. Whether you're a buyer, manufacturer, trader, distributor, industrial consultant, or technology provider, IndTech Expo 2026 offers unmatched opportunities to connect, collaborate, and scale innovation across multiple sectors.
+        </p>
+
+        <ul class="about-features">
+          <li>350+ Exhibitors across Industrial & Technology sectors</li>
+          <li>Latest Machinery, Robotics & Automation Displays</li>
+          <li>Live Demonstrations & Tech Presentations</li>
+          <li>Networking with High-Level Industry Delegates</li>
+        </ul>
+
+        <a href="#" class="btn about-btn mt-3">Explore More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="marquee-section">
+    <div class="container-fluid">
+      <div class="marquee-track">
+
+        <div class="marquee-inner">
+         <span class="marquee-item">
+Industrial Automation • Smart Manufacturing Solutions • CNC & Machine Tools • Robotics & AI Integration • Welding & Fabrication Systems • Electrical & Electronic Automation • Material Handling & Logistics Tech • Industry 4.0 Innovations • Advanced Engineering Technologies • Global Industrial Technology Showcase
+</span>
+
+         
+        </div>
+
+        <!-- Duplicate for infinite loop -->
+
+      </div>
+    </div>
+  </section>
+
+
+   <section class="countdown-section">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <!-- Left Yellow Heading -->
+      <div class="col-lg-4">
+        <h2 class="count-title">
+          INDTEC EXPO 2026
+        </h2>
+        <p style="text-align: center;">Where Industrial Innovation Meets the Future.</p>
+      </div>
+
+      <!-- Countdown Boxes -->
+      <div class="col-lg-8">
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+
+          <div class="timer-box">
+            <div class="num" id="days">000</div>
+            <div class="label">Days</div>
+          </div>
+
+          <div class="timer-box">
+            <div class="num" id="hours">00</div>
+            <div class="label">Hours</div>
+          </div>
+
+          <div class="timer-box">
+            <div class="num" id="minutes">00</div>
+            <div class="label">Minutes</div>
+          </div>
+
+          <div class="timer-box">
+            <div class="num" id="seconds">00</div>
+            <div class="label">Seconds</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="container-fluid" style="background: url('images/fdback.jpg');">
+  <section class="indtech-what-section py-5">
+  <div class="container">
+
+    <!-- Heading -->
+    <h2 class="fw-bold text-center mb-3">What Is IndTech Expo 2026?</h2>
+    <p class="text-center text-black mb-5">
+      Building on previous successful editions, IndTech Expo 2026 brings together 250+ industry leaders,
+      manufacturers, engineers, innovators, and technology providers to explore future-driven
+      industrial advancements, collaborations, and opportunities—all under one roof.
+    </p>
+
+    <div class="row g-5">
+
+      <!-- LEFT COLUMN -->
+      <div class="col-lg-6">
+
+        <!-- Item 1 -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-circle bg-red"><i class="bi bi-gear-wide-connected"></i></div>
+          <div class="ms-3">
+            <h5 class="fw-bold">Strategic Industry Partnerships</h5>
+            <p>
+              Build high-impact partnerships with manufacturers, automation experts,
+              machine tool companies, and industrial technology leaders.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-circle bg-green"><i class="bi bi-lightbulb"></i></div>
+          <div class="ms-3">
+            <h5 class="fw-bold">Knowledge Sharing</h5>
+            <p>
+              Learn from innovators, explore best practices, and discover the latest trends
+              shaping the future of manufacturing & industrial automation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-circle bg-purple"><i class="bi bi-diagram-3"></i></div>
+          <div class="ms-3">
+            <h5 class="fw-bold">Collaboration Catalysts</h5>
+            <p>
+              Discover joint venture opportunities, engineering collaborations,
+              supply-chain synergies, and new business pathways.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-circle bg-brown"><i class="bi bi-people"></i></div>
+          <div class="ms-3">
+            <h5 class="fw-bold">Industrial Networking Program</h5>
+            <p>
+              Connect with top industrial leaders, factory owners, engineers, OEMs,
+              and decision-makers for impactful networking.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-lg-6">
+
+        <!-- Item 5 -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-circle bg-pink"><i class="bi bi-currency-rupee"></i></div>
+          <div class="ms-3">
+            <h5 class="fw-bold">Investment Opportunities</h5>
+            <p>
+              Meet investors, distributors, and technology partners to explore
+              funding and market expansion opportunities.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-circle bg-blue"><i class="bi bi-display"></i></div>
+          <div class="ms-3">
+            <h5 class="fw-bold">Product Pitch Platform</h5>
+            <p>
+              Present new machinery, tools, automation systems, and industrial solutions
+              directly to buyers and industry specialists.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-circle bg-dark-blue"><i class="bi bi-chat-dots"></i></div>
+          <div class="ms-3">
+            <h5 class="fw-bold">Boardroom-Level Conversations</h5>
+            <p>
+              Insightful discussions with C-level leaders on market shifts,
+              challenges, breakthrough technologies, and manufacturing strategies.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-circle bg-light-pink"><i class="bi bi-cpu"></i></div>
+          <div class="ms-3">
+            <h5 class="fw-bold">AI, Automation & Innovation</h5>
+            <p>
+              Explore how AI-driven automation, robotics, and smart technologies are
+              transforming factories and redefining industrial productivity.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="container mt-5">
+    <h2 style="text-align: center;font-weight: 700;">INDTEC EXPO 2026 -  Exhibitors</h2>
+    <p class="text-center">High-precision CNC and automated machining solutions for modern manufacturing.</p>
+</div>
+
+<section class="exhibitors-grid-section py-5">
+  <div class="container-fluid">
+
+    <div class="row g-4">
+
+      <!-- CARD 01 -->
+      <div class="col-lg-6">
+        <div class="exhibitor-box" style="background-image:url('images/econe.jpg');">
+          <div class="overlay"></div>
+          <div class="content">
+            <span class="item-number">01.</span>
+            <h2>CNC Machining & Automation</h2>
+            <p>
+              High-precision CNC machines, smart cutting tools, and automated
+              machining systems for next-generation manufacturing efficiency.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 02 -->
+      <div class="col-lg-6">
+        <div class="exhibitor-box" style="background-image:url('images/ectwo.jpg');">
+          <div class="overlay"></div>
+          <div class="content">
+            <span class="item-number">02.</span>
+            <h2>Robotics & Industrial Automation</h2>
+            <p>
+              Industrial robots, cobots, robotic arms, and smart automation solutions
+              for assembly, logistics, inspection, and precision operations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 03 -->
+      <div class="col-lg-6">
+        <div class="exhibitor-box" style="background-image:url('images/ecthree.avif');">
+          <div class="overlay"></div>
+          <div class="content">
+            <span class="item-number">03.</span>
+            <h2>Machine Tools & Industrial Solutions</h2>
+            <p>
+              Heavy-duty machinery, forming tools, industrial cutting systems, and
+              advanced engineering tools for factories & workshops.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 04 -->
+      <div class="col-lg-6">
+        <div class="exhibitor-box" style="background-image:url('images/ecfour.jpg');">
+          <div class="overlay"></div>
+          <div class="content">
+            <span class="item-number">04.</span>
+            <h2>Welding & Fabrication Systems</h2>
+            <p>
+              Plasma cutting, MIG/TIG welding machines, fabrication tools,
+              consumables, and safety solutions for industrial applications.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 05 -->
+      <div class="col-lg-6">
+        <div class="exhibitor-box" style="background-image:url('images/ecfive.jpg');">
+          <div class="overlay"></div>
+          <div class="content">
+            <span class="item-number">05.</span>
+            <h2>Electrical & Automation Systems</h2>
+            <p>
+              PLCs, drives, control panels, sensors, power systems, and IoT-enabled
+              automation solutions for modern industrial operations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 06 -->
+      <div class="col-lg-6">
+        <div class="exhibitor-box" style="background-image:url('images/ecsix.jpg');">
+          <div class="overlay"></div>
+          <div class="content">
+            <span class="item-number">06.</span>
+            <h2>Material Handling & Logistics Tech</h2>
+            <p>
+              Conveyors, forklifts, cranes, warehousing automation, and industrial
+              logistics solutions for efficient facility operations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="text-center">
+        <a class="btn" style="margin-top: 2rem;background-color: #06162f;color: white;" href="exhibitors.html">View All</a>
+    </div>
+  </div>
+</section>
+
+<section class="why-indtec-2025 py-5" style="background-color: #06162f;">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">Why IND-TEC 2025?</h2>
+        <p class="desc">
+          IND-TEC 2025 is the largest industrial expo on the Tamil Nadu–Karnataka border, 
+          connecting businesses from key regions like Bangalore, Hosur, Coimbatore, and Chennai.
+          Focused on SMEs and large enterprises in engineering, robotics, automation, and more,
+          it offers a powerful platform to showcase products, launch innovations, and build 
+          valuable business connections.
+        </p>
+      </div>
+
+      <!-- RIGHT HIGHLIGHTS GRID -->
+      <div class="col-lg-6">
+        <div class="row g-3">
+
+          <div class="col-md-6">
+            <div class="why-box">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p>Largest Expo on TN–Karnataka Border</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="why-box">
+              <i class="bi bi-bullseye"></i>
+              <p>Reach Regional Markets</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="why-box">
+              <i class="bi bi-building"></i>
+              <p>For SMEs & Large Enterprises</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="why-box">
+              <i class="bi bi-lightning-fill"></i>
+              <p>Live Demos</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="why-box">
+              <i class="bi bi-award-fill"></i>
+              <p>7th Edition</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="why-box">
+              <i class="bi bi-people-fill"></i>
+              <p>Networking With Leaders</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="why-box">
+              <i class="bi bi-boxes"></i>
+              <p>New Product Showcases</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="why-box">
+              <i class="bi bi-graph-up"></i>
+              <p>Boost SME Growth</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="gallery-marquee-section py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">IndTech Expo 2026 – Gallery</h2>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-content">
+
+      <!-- Repeat images for smooth infinite scrolling -->
+      <img src="images/ecfive.jpg" alt="Gallery Image">
+      <img src="images/expothree.jpg" alt="Gallery Image">
+      <img src="images/expofour.jpg" alt="Gallery Image">
+      <img src="images/vone.jpg" alt="Gallery Image">
+      <img src="images/vtwo.jpg" alt="Gallery Image">
+
+      <!-- Duplicate set for smooth loop -->
+      <img src="images/ione.webp" alt="Gallery Image">
+      <img src="images/ithree.jpg" alt="Gallery Image">
+      <img src="images/vfive.jpg" alt="Gallery Image">
+      <img src="images/vthree.webp" alt="Gallery Image">
+      <img src="images/vsix.jpg" alt="Gallery Image">
+      <img src="images/ecfive.jpg" alt="Gallery Image">
+      <img src="images/expothree.jpg" alt="Gallery Image">
+      <img src="images/expofour.jpg" alt="Gallery Image">
+      <img src="images/vone.jpg" alt="Gallery Image">
+      <img src="images/vtwo.jpg" alt="Gallery Image">
+
+      <!-- Duplicate set for smooth loop -->
+      <img src="images/ione.webp" alt="Gallery Image">
+      <img src="images/ithree.jpg" alt="Gallery Image">
+      <img src="images/vfive.jpg" alt="Gallery Image">
+      <img src="images/vthree.webp" alt="Gallery Image">
+      <img src="images/vsix.jpg" alt="Gallery Image">
+
+    </div>
+  </div>
+</section>
+
+
+<div class="container-fluid" style="background: url('images/fdback.jpg');">
+<section class="industries-section py-5">
+  <div class="container">
+
+    <h2 class="fw-bold text-center mb-4">INDUSTRIES COVERED</h2>
+    <p class="text-center text-muted mb-5">
+      IndTech Expo 2026 brings together diverse industries driving India’s innovation and manufacturing ecosystem.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- CARD TEMPLATE -->
+      <!-- Automobile -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/inone.avif" alt="">
+          <div class="info">
+            <h5>Automobile</h5>
+            <p>Auto Components</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aerospace -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/intwo.jpg" alt="">
+          <div class="info">
+            <h5>Aerospace</h5>
+            <p>Aerospace & Defence</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Construction -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/inthree.avif" alt="">
+          <div class="info">
+            <h5>Construction</h5>
+            <p>Construction Equipment</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Earthmoving -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/infour.jpg" alt="">
+          <div class="info">
+            <h5>Earthmoving</h5>
+            <p>Heavy Equipment</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oil & Gas -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/infive.jpg" alt="">
+          <div class="info">
+            <h5>Oil & Gas</h5>
+            <p>Energy & Exploration</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- General Engineering -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/insix.jpg" alt="">
+          <div class="info">
+            <h5>General Engineering</h5>
+            <p>Manufacturing</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- IT & Digital -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/inseven.webp" alt="">
+          <div class="info">
+            <h5>IT</h5>
+            <p>Digital Technologies</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Textiles -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/ineight.jpg" alt="">
+          <div class="info">
+            <h5>Textiles</h5>
+            <p>Garments & Apparel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Renewable Energy -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/innine.webp" alt="">
+          <div class="info">
+            <h5>Renewables</h5>
+            <p>Energy Solutions</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chemicals -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/inten.jpg" alt="">
+          <div class="info">
+            <h5>Chemicals</h5>
+            <p>Industrial Chemicals</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Electronics -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/ineleven.jpg" alt="">
+          <div class="info">
+            <h5>Electronics</h5>
+            <p>Electronic Systems</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Heavy Engineering -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/intwelve.jpeg" alt="">
+          <div class="info">
+            <h5>Heavy Industry</h5>
+            <p>Heavy Engineering</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pharma -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/inthirteen.jpg" alt="">
+          <div class="info">
+            <h5>Pharmaceuticals</h5>
+            <p>Drug Manufacturing</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food Processing -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/infourteen.cms" alt="">
+          <div class="info">
+            <h5>Food Processing</h5>
+            <p>FMCG & Packaging</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logistics -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="industry-card">
+          <img src="images/infifteen.jpg" alt="">
+          <div class="info">
+            <h5>Logistics</h5>
+            <p>Supply Chain</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+</div>
+
+
+<section class="premium-review-section py-5">
+  <div class="container">
+
+    <div class="row align-items-center mb-5">
+
+      <!-- LEFT SIDE -->
+      <div class="col-lg-6">
+        <h2 class="review-count">550+ <br> 
+          <span>Reviews From Industry Leaders</span>
+        </h2>
+      </div>
+
+      <!-- RIGHT SIDE CTA -->
+      <div class="col-lg-6">
+        <div class="cta-box">
+          <div class="avatars">
+            <img src="images/facefive.jpg" alt="">
+            <img src="images/faceone.avif" alt="">
+            <img src="images/facethree.avif" alt="">
+            <img src="images/facetwo.jpeg" alt="">
+            <img src="images/faceone.avif" alt="">
+          </div>
+
+          <p class="subtext">10,000+ visitors already trust IndTech Expo.</p>
+
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="btn btn-warning px-4 rounded-3 fw-bold">Get a Free Pass →</a>
+            <a href="#" class="btn btn-outline-light px-4 rounded-3 fw-bold">Read More Reviews</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- REVIEW CARDS -->
+    <div class="row g-4">
+
+      <!-- Review card -->
+      <div class="col-lg-4 col-md-6">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="text">
+            “IndTech Expo has completely transformed how we explore industrial automation and machine tools.
+            A must-visit for manufacturers.”
+          </p>
+          <div class="profile">
+            <img src="images/faceone.avif" alt="">
+            <div>
+              <h6 class="name">Arun Prakash</h6>
+              <p class="role">Factory Head – Metal Works Ltd.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review card -->
+      <div class="col-lg-4 col-md-6">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="text">
+            “A complete ecosystem for engineering, robotics and automation solutions. Excellent exhibitor lineup!”
+          </p>
+          <div class="profile">
+            <img src="images/facefive.jpg" alt="">
+            <div>
+              <h6 class="name">Divya Ramesh</h6>
+              <p class="role">Automation Specialist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review card -->
+      <div class="col-lg-4 col-md-6">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="text">
+            “The best place to discover new industrial technologies. Perfect event for SMEs looking to scale.”
+          </p>
+          <div class="profile">
+            <img src="images/facetwo.jpeg" alt="">
+            <div>
+              <h6 class="name">Ravi Kumar</h6>
+              <p class="role">CEO – TechForge Equipments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review card -->
+      <div class="col-lg-4 col-md-6">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="text">
+            “Live demos were extremely helpful. Got to interact with top CNC and automation suppliers.”
+          </p>
+          <div class="profile">
+            <img src="images/facethree.avif" alt="">
+            <div>
+              <h6 class="name">Shylaja Engineering</h6>
+              <p class="role">Managing Director</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review card -->
+      <div class="col-lg-4 col-md-6">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="text">
+            “Perfect platform for launching industrial products. We generated excellent leads!”
+          </p>
+          <div class="profile">
+            <img src="images/facefour.jpg" alt="">
+            <div>
+              <h6 class="name">Megha Industries</h6>
+              <p class="role">Product Head</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review card -->
+      <div class="col-lg-4 col-md-6">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="text">
+            “Professional, well-managed and high-value expo. Truly world-class experience!”
+          </p>
+          <div class="profile">
+            <img src="images/facesix.webp" alt="">
+            <div>
+              <h6 class="name">Ramesh AutoTech</h6>
+              <p class="role">Industrial Buyer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row footer-wrapper g-4">
+
+            <!-- LEFT SECTION -->
+            <div class="col-lg-4 col-md-12">
+                <img src="images/mainlogo.png" class="footer-logo">
+                <p class="footer-desc">
+                    IndTech Expo 2026 is India’s premier technology innovation showcase, uniting industry leaders, manufacturers, engineers, innovators, and decision-makers under one roof.
+                </p>
+
+                <div class="social-icons mt-3">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- USEFUL LINKS -->
+            <div class="col-lg-2 col-md-6">
+                <h4 class="footer-title">Useful Links</h4>
+                <div class="footer-title-line"></div>
+
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="exhibitors.html">Exhibitors</a>
+                    <a href="visitors.html">Visitors</a>
+                    <a href="sponsorship.html">Sponsership</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="footer-title">Contact Us</h4>
+                <div class="footer-title-line"></div>
+
+                <div class="contact-item">
+                    <i class="bi bi-telephone"></i>  +917406213221 
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-telephone"></i>  +080 23238677
+                </div>
+
+                <div class="contact-item">
+                    <i class="bi bi-envelope"></i>  yuvajaguar@gmail.com
+                </div>
+
+                <h5 class="footer-title mt-4">GALLERY</h5>
+                <div class="footer-title-line"></div>
+
+                <div class="app-btn">
+                    <img src="images/efour.jpg">
+                    <img src="images/ione.webp">
+                    <img src="images/ithree.jpg">
+                </div>
+            </div>
+
+            <!-- GOOGLE MAP -->
+            <div class="col-lg-3 col-md-12 footer-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.861799683565!2d72.616!3d21.200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2z!5e0!3m2!1sen!2sin!4v170122233" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+          © IndTecExpo All Rights Reserved.</b> |  
+        Design & Promote by <b>Tech Mayon</b>
+    </div>
+</footer>
+
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+  <script>
+  // 🔥 Set your event date here
+  var eventDate = new Date("sep 4, 2026 10:00:00").getTime();
+
+  function updateCountdown() {
+    var now = new Date().getTime();
+    var diff = eventDate - now;
+
+    if (diff <= 0) {
+      document.getElementById("days").innerHTML = "0";
+      document.getElementById("hours").innerHTML = "0";
+      document.getElementById("minutes").innerHTML = "0";
+      document.getElementById("seconds").innerHTML = "0";
+      return;
+    }
+
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+    document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+    document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+  }
+
+  // Update countdown every 1 second
+  setInterval(updateCountdown, 1000);
+  updateCountdown(); // Initial call
+</script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
+</body>
+</html>

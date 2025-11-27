@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  
+  <div class="container-fluid" style="padding: 0px;overflow: hidden;">
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="images/top.png" width="100%" alt="">
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <!-- Logo (Mobile Only) -->
+    <a class="navbar-brand d-lg-none" href="index.html">
+      <img src="images/mainlogo.png" loading="lazy" alt="Logo" class="navbar-logo">
+    </a>
+
+    <!-- Hamburger (sidebar trigger) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse justify-content-center d-none d-lg-block">
+      <ul class="navbar-nav w-100 justify-content-center">
+        <!-- Left Menu -->
+        <li class="nav-item"><a class="nav-link"   href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" style="background-color: #ff6100;color: white;" href="about.html">ABOUT US</a></li>
+
+        <!-- Dropdown for OUR PARTNERS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle left-gap" href="#" id="partnersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            EXHIBITORS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="partnersDropdown">
+            <li><a class="dropdown-item" href="exhibitors.html">EXHIBITORS</a></li>
+            <li><a class="dropdown-item" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+            <li><a class="dropdown-item" href="images/broucher.pdf">BROCHURE</a></li>
+          </ul>
+        </li>
+
+        <!-- Center Logo -->
+        
+
+        <!-- Right Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle left-gap" href="#" id="partnersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            VISITORS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="partnersDropdown">
+            <li><a class="dropdown-item" href="visitors.html">VISITORS</a></li>
+            <li><a class="dropdown-item" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+            <li><a class="dropdown-item" href="images/broucher.pdf">BROCHURE</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+  <a class="nav-link right-gap" href="sponsership.html">
+    SPONSORSHIP
+  </a>
+</li>
+
+
+          <a class="nav-link right-gap" href="gallery.html">
+    GALLERY
+  </a>
+</li>
+        <li class="nav-item"><a class="nav-link"  href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Offcanvas Menu -->
+<!-- ✅ Mobile Offcanvas Menu -->
+<div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">
+      <img src="images/mainlogo.png" loading="lazy" width="100px" alt="Logo">
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link text-dark" href="index.html">HOME</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="about.html">ABOUT US</a></li>
+
+      <!-- ✅ EXHIBITORS Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="mobileExhibitorsDropdown"
+           role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          EXHIBITORS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="mobileExhibitorsDropdown">
+          <li><a class="dropdown-item text-dark" href="exhibitors.html">EXHIBITORS</a></li>
+          <li><a class="dropdown-item text-dark" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+          <li><a class="dropdown-item text-dark" href="images/broucher.pdf">BROCHURE</a></li>
+        </ul>
+      </li>
+
+      <!-- ✅ VISITORS Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="mobileVisitorsDropdown"
+           role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          VISITORS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="mobileVisitorsDropdown">
+          <li><a class="dropdown-item text-dark" href="visitors.html">VISITORS</a></li>
+          <li><a class="dropdown-item text-dark" href="images/floorplan.pdf">FLOOR PLAN</a></li>
+          <li><a class="dropdown-item text-dark" href="images/broucher.pdf">BROCHURE</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a class="nav-link text-dark" href="sponsership.html">SPONSORSHIP</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="gallery.html">GALLERY</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container-fluid" style="padding: 0px;overflow: hidden;">
+  <div class="row">
+    <div class="col-lg-12">
+      <img src="images/contactban.png" loading="lazy" width="100%" alt="">
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" style="padding: 0px;overflow: hidden;">
+  <div class="row">
+    <div class="col-lg-12">
+      <img src="images/galba.jpeg" loading="lazy"  width="100%"  alt="">
+    </div>
+  </div>
+</div>
+
+<section class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <!-- LEFT SIDE IMAGE -->
+      <div class="col-lg-6">
+        <div class="about-image-wrapper">
+          <img src="images/expogal.webp" alt="IndTech Expo 2026" class="img-fluid about-img">
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE CONTENT -->
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3 badge" style="background-color: #06162f;font-size: 25px;">About IndTech Expo 2026</h2>
+
+        <p class="about-para">
+          IndTech Expo 2026 is India’s premier platform showcasing cutting-edge
+          industrial technologies, automation, machinery, tools, and next-gen
+          manufacturing innovations. The expo brings together industry leaders,
+          manufacturers, suppliers, engineers, and decision-makers under one roof.The event serves as a powerful hub for technology exchange, business networking, product demonstrations, and knowledge sharing. With a strong focus on Industry 4.0, smart manufacturing, robotics, material handling, digital production systems, and sustainable industrial solutions, the expo empowers companies to accelerate growth and stay competitive in a rapidly evolving market.Visitors can experience live machinery demos, discover breakthrough technologies, interact with global brands, attend technical sessions, and unlock new sourcing opportunities. Whether you're a buyer, manufacturer, trader, distributor, industrial consultant, or technology provider, IndTech Expo 2026 offers unmatched opportunities to connect, collaborate, and scale innovation across multiple sectors.
+        </p>
+
+        <ul class="about-features">
+          <li>350+ Exhibitors across Industrial & Technology sectors</li>
+          <li>Latest Machinery, Robotics & Automation Displays</li>
+          <li>Live Demonstrations & Tech Presentations</li>
+          <li>Networking with High-Level Industry Delegates</li>
+        </ul>
+
+        <a href="#" class="btn about-btn mt-3">Explore More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="mvv-section py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">Mission • Vision • Values</h2>
+
+    <div class="mvv-wrapper mx-auto">
+
+      <!-- Mission -->
+      <div class="mvv-circle mission-circle">
+        <div class="inner">
+          <i class="bi bi-bullseye"></i>
+          <h4 class="fw-bold mt-2">Mission</h4>
+          <p>
+            To promote industrial innovation, support growth, and create a 
+            collaborative platform for global technology exchange.
+          </p>
+        </div>
+      </div>
+
+      <!-- Values -->
+      <div class="mvv-circle values-circle">
+        <div class="inner">
+          <i class="bi bi-gear-wide"></i>
+          <h4 class="fw-bold mt-2">Values</h4>
+          <p>
+            Integrity, excellence, innovation, and commitment to shaping a 
+            sustainable industrial future.
+          </p>
+        </div>
+      </div>
+
+      <!-- Vision -->
+      <div class="mvv-circle vision-circle">
+        <div class="inner">
+          <i class="bi bi-lightbulb"></i>
+          <h4 class="fw-bold mt-2">Vision</h4>
+          <p>
+            To become Asia’s most influential industrial expo, enabling 
+            next-gen manufacturing and smart technologies.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="attend-expect-section py-5">
+  <div class="container">
+
+    <!-- Title -->
+    <h2 class="fw-bold text-center mb-4">Who Should Attend & What to Expect</h2>
+    <p class="text-center text-muted mb-5">
+      Explore the key highlights and experiences that make IND-TEC 2025 a must-attend industrial event.
+    </p>
+
+    <div class="row g-4">
+      
+      <!-- Items List -->
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <i class="bi bi-people-fill"></i>
+          <h5 class="fw-bold mt-2">Who Should Attend?</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <i class="bi bi-bullseye"></i>
+          <h5 class="fw-bold mt-2">What to Expect</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <i class="bi bi-shop-window"></i>
+          <h5 class="fw-bold mt-2">100+ Exhibitors</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <i class="bi bi-gear-wide-connected"></i>
+          <h5 class="fw-bold mt-2">Live Machinery Demos</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <i class="bi bi-cpu"></i>
+          <h5 class="fw-bold mt-2">Tech Showcases</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <i class="bi bi-chat-dots-fill"></i>
+          <h5 class="fw-bold mt-2">Panel Discussions</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <i class="bi bi-briefcase-fill"></i>
+          <h5 class="fw-bold mt-2">B2B Meetings</h5>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="counter-section py-5">
+  <div class="overlay"></div>
+  <div class="container position-relative">
+
+    <h2 class="text-center fw-bold text-white mb-5">Last Year’s Highlights</h2>
+
+    <div class="row text-center g-4">
+
+      <!-- Counter 1 -->
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="counter-box">
+          <h3 class="counter" data-target="10000">0</h3>
+          <p class="label">Visitors</p>
+        </div>
+      </div>
+
+      <!-- Counter 2 -->
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="counter-box">
+          <h3 class="counter" data-target="50">0</h3>
+          <p class="label">Cities Represented</p>
+        </div>
+      </div>
+
+      <!-- Counter 3 -->
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="counter-box">
+          <h3 class="counter" data-target="3000">0</h3>
+          <p class="label">Exhibition Area (sq. ft.)</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="why-indtec-section py-5">
+  <div class="container">
+
+    <h2 class="fw-bold text-center mb-4">WHY IND-TEC 2026</h2>
+    <p class="text-center text-black mb-5">
+      Discover why IND-TEC stands as India’s most influential industrial technology exhibition.
+    </p>
+
+    <div class="accordion" id="whyIndTecAccordion">
+
+      <!-- POINT 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Focused on Key Industrial Sectors
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#whyIndTecAccordion">
+          <div class="accordion-body">
+            IND-TEC 2025 focuses on large, small, and medium enterprises across a wide spectrum of industries including 
+            <strong>Engineering, Robotics, Machine Tools, Electricals & Electronics, Instrumentation & Automation, Fire & Safety, Digital Technology, Welding Processes, and Equipment Manufacturing</strong>.
+          </div>
+        </div>
+      </div>
+
+      <!-- POINT 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Largest Industrial Expo Across TN-KA Border
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#whyIndTecAccordion">
+          <div class="accordion-body">
+            IND-TEC 2025 marks its <strong>7th edition</strong> and is the <strong>largest show along the Tamil Nadu–Karnataka border</strong>.
+            The expo reaches key industrial cities including:
+            <em>Bangalore, Hosur, Krishnagiri, Salem, Vellore, Hosakote, Sriperumbudur, Chennai, Erode, Madurai, Coimbatore, Tirupur</em> and more.
+          </div>
+        </div>
+      </div>
+
+      <!-- POINT 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Connect With a Pan-India Audience
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#whyIndTecAccordion">
+          <div class="accordion-body">
+            IND-TEC is the <strong>only exhibition</strong> offering businesses the ability to reach a <strong>diverse, pan-India audience</strong>.
+            Exhibitors also get the opportunity to promote offerings regionally based on targeted business needs.
+          </div>
+        </div>
+      </div>
+
+      <!-- POINT 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            Platform for Innovation, Tie-ups & New Launches
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#whyIndTecAccordion">
+          <div class="accordion-body">
+            The expo provides a dynamic platform for companies to <strong>exhibit products, explore partnerships, form business tie-ups</strong>, 
+            and showcase unique industrial solutions powered by the latest advancements in 
+            <strong>design, engineering, equipment, supplies and support services</strong>.
+            It is also an ideal venue for <strong>launching new products & services</strong>.
+          </div>
+        </div>
+      </div>
+
+      <!-- POINT 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+            Empowering SMEs & Driving Growth
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#whyIndTecAccordion">
+          <div class="accordion-body">
+            IND-TEC is dedicated to supporting <strong>SMEs</strong> by boosting business development, enhancing market visibility, and improving profitability.
+            The expo strives to uplift small and medium industries by giving them a strong platform for networking and growth.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="row footer-wrapper g-4">
+
+            <!-- LEFT SECTION -->
+            <div class="col-lg-4 col-md-12">
+                <img src="images/mainlogo.png" class="footer-logo">
+                <p class="footer-desc">
+                    IndTech Expo 2026 is India’s premier technology innovation showcase, uniting industry leaders, manufacturers, engineers, innovators, and decision-makers under one roof.
+                </p>
+
+                <div class="social-icons mt-3">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- USEFUL LINKS -->
+            <div class="col-lg-2 col-md-6">
+                <h4 class="footer-title">Useful Links</h4>
+                <div class="footer-title-line"></div>
+
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="exhibitors.html">Exhibitors</a>
+                    <a href="visitors.html">Visitors</a>
+                    <a href="sponsorship.html">Sponsership</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="footer-title">Contact Us</h4>
+                <div class="footer-title-line"></div>
+
+                <div class="contact-item">
+                    <i class="bi bi-telephone"></i>  +917406213221 
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-telephone"></i>  +080 23238677
+                </div>
+
+                <div class="contact-item">
+                    <i class="bi bi-envelope"></i>  yuvajaguar@gmail.com
+                </div>
+
+                <h5 class="footer-title mt-4">GALLERY</h5>
+                <div class="footer-title-line"></div>
+
+                <div class="app-btn">
+                    <img src="images/efour.jpg">
+                    <img src="images/ione.webp">
+                    <img src="images/ithree.jpg">
+                </div>
+            </div>
+
+            <!-- GOOGLE MAP -->
+            <div class="col-lg-3 col-md-12 footer-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.861799683565!2d72.616!3d21.200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2z!5e0!3m2!1sen!2sin!4v170122233" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+          © IndTecExpo All Rights Reserved.</b> |  
+        Design & Promote by <b>Tech Mayon</b>
+    </div>
+</footer>
+
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+  <script>
+  const counters = document.querySelectorAll(".counter");
+  const speed = 150; // Adjust speed
+
+  const runCounter = (counter) => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+
+    const increment = target / speed;
+
+    if (count < target) {
+      counter.innerText = Math.ceil(count + increment);
+      setTimeout(() => runCounter(counter), 20);
+    } else {
+      counter.innerText = target.toLocaleString();
+    }
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        runCounter(entry.target.querySelector(".counter"));
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  document.querySelectorAll(".counter-box").forEach(box => {
+    observer.observe(box);
+  });
+</script>
+
+ 
+</body>
+</html>
