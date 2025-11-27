@@ -1023,7 +1023,7 @@ html, body {
       line-height: 1.7;
     }
     .about-section {
-  background: #fafafa;
+  background: url('images/Indtec.png')center/cover no-repeat;
 }
 
 .about-image-wrapper {
@@ -1044,8 +1044,8 @@ html, body {
 }
 
 .about-para {
-  font-size: 16px;
-  color: #555;
+  font-size: 18px;
+  color: black;
   line-height: 1.7;
   text-align: justify;
   hyphens: auto;
@@ -1059,7 +1059,7 @@ html, body {
 .about-features li {
   font-size: 17px;
   margin-bottom: 8px;
-  color: #333;
+  color: black;
 }
 
 .about-btn {
@@ -1349,6 +1349,7 @@ html, body {
 }
 .indtech-what-section h2 {
   font-size: 34px;
+  color: white;
 }
 
 .icon-circle {
@@ -1375,13 +1376,14 @@ html, body {
 
 /* Text adjustments */
 .indtech-what-section p {
-  font-size: 15px;
-  color: #555;
+  font-size: 16px;
+  color: white;
   line-height: 1.6;
 }
 
 .indtech-what-section h5 {
   font-size: 18px;
+  color: white;
 }
 
 /* Responsive */
