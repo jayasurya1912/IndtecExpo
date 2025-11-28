@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Ark Shipping</title>
+  <title>Contact </title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,18 @@
 
 <body>
 
+  <div id="preloader">
+  <div class="loader-box">
+    <div class="orbit-loader">
+      <div class="center-dot"></div>
+      <div class="orbit">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="loading-text">Loading...</div>
+  </div>
+</div>
 
 
   <div class="container-fluid" style="padding: 0px;overflow: hidden;">
@@ -168,9 +180,9 @@
             </div>
             <h4>Office Location</h4>
             <p> #372/1, 3rd Floor,
-4th Stage, 8th Main Road,
-Basaweshwaranagar, Bangalore,
-Karnataka, India - 560079</p>
+            4th Stage, 8th Main Road,
+            Basaweshwaranagar, Bangalore,
+            Karnataka, India - 560079</p>
           </div>
 
           <div class="contact-card">
@@ -379,5 +391,13 @@ Karnataka, India - 560079</p>
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   </script>
+
+  <script>
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    document.getElementById("preloader").classList.add("hide");
+  }, 500);
+});
+</script>
 </body>
 </html>
