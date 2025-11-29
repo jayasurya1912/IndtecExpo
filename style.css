@@ -1023,19 +1023,27 @@ html, body {
       line-height: 1.7;
     }
     .about-section {
-  background: url('images/Indte.jpeg')center/cover no-repeat;
+  background: url('images/Indte.jpeg') center/cover no-repeat;
 }
 
+/* MAKE BOTH COLUMNS SAME HEIGHT */
+.about-section .row {
+  display: flex;
+  align-items: stretch;
+}
+
+/* LEFT IMAGE BOX */
 .about-image-wrapper {
+  height: 100%; 
   overflow: hidden;
   border-radius: 14px;
 }
 
 .about-img {
-  border-radius: 14px;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  border-radius: 14px;
   transition: 0.4s ease;
 }
 
@@ -1043,6 +1051,7 @@ html, body {
   transform: scale(1.03);
 }
 
+/* CONTENT */
 .about-para {
   font-size: 18px;
   color: black;
@@ -1076,8 +1085,16 @@ html, body {
   color: #fff;
 }
 
-/* RESPONSIVE FIXES */
+/* RESPONSIVE (Remove equal-height on mobile) */
 @media (max-width: 991px) {
+  .about-section .row {
+    display: block; /* Let it stack naturally */
+  }
+
+  .about-image-wrapper {
+    height: 250px;  /* mobile image height */
+  }
+
   .about-section .row {
     text-align: center;
   }
@@ -1088,6 +1105,7 @@ html, body {
     display: inline-block;
   }
 }
+
 
 .mvv-wrapper {
   position: relative;
@@ -1125,12 +1143,13 @@ html, body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: -4rem;
 }
 
 .values-circle {
   background: #06162f;
   bottom: 0;
-  left: 0;
+  left: -10;
   color: white;
 }
 
