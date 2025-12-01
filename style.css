@@ -1027,85 +1027,31 @@ html, body {
 }
 
 /* MAKE BOTH COLUMNS SAME HEIGHT */
-.about-section .row {
-  display: flex;
-  align-items: stretch;
+.about-section .row > div {
+  display: flex; /* ensures equal height columns */
 }
 
-/* LEFT IMAGE BOX */
-.about-image-wrapper {
-  height: 100%; 
-  overflow: hidden;
-  border-radius: 14px;
-}
-
-.about-img {
-  width: 100%;
-  height: 100%;
+.about-img-wrapper img {
+  border-radius: 16px;
   object-fit: cover;
-  border-radius: 14px;
-  transition: 0.4s ease;
 }
 
-.about-img:hover {
-  transform: scale(1.03);
+.about-content {
+  background: #f8f9fa;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* CONTENT */
-.about-para {
-  font-size: 18px;
-  color: black;
-  line-height: 1.7;
-  text-align: justify;
-  hyphens: auto;
+.object-fit-cover {
+  object-fit: cover !important;
 }
-
-.about-features {
-  padding-left: 18px;
-  margin-top: 15px;
+.btn-opn
+{
+  background-color: #06162f;
+  color: white;
 }
-
-.about-features li {
-  font-size: 17px;
-  margin-bottom: 8px;
-  color: black;
-}
-
-.about-btn {
-  background: #ff7a00;
-  color: #fff;
-  padding: 10px 25px;
-  font-weight: 600;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.about-btn:hover {
-  background: #ff8f26;
-  color: #fff;
-}
-
-/* RESPONSIVE (Remove equal-height on mobile) */
-@media (max-width: 991px) {
-  .about-section .row {
-    display: block; /* Let it stack naturally */
-  }
-
-  .about-image-wrapper {
-    height: 250px;  /* mobile image height */
-  }
-
-  .about-section .row {
-    text-align: center;
-  }
-
-  .about-features {
-    text-align: left;
-    margin: 0 auto;
-    display: inline-block;
-  }
-}
-
 
 .mvv-wrapper {
   position: relative;

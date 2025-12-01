@@ -3,98 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <title>Orbit Preloader</title>
 
 <style>
 
-/* Fullscreen Preloader */
-#preloader {
-  position: fixed;
-  inset: 0;
-  background: #06162f;
+.about-section .row > div {
+  display: flex; /* ensures equal height columns */
+}
+
+.about-img-wrapper img {
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.about-content {
+  background: #f8f9fa;
+  border-radius: 16px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  z-index: 999999;
-  transition: opacity .6s ease, visibility .6s ease;
 }
 
-#preloader.hide {
-  opacity: 0;
-  visibility: hidden;
+.object-fit-cover {
+  object-fit: cover !important;
 }
 
-/* ORBIT LOADER */
-.orbit-loader {
-  width: 90px;
-  height: 90px;
-  position: relative;
-}
-
-.center-dot {
-  width: 18px;
-  height: 18px;
-  background: #ff6100;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Orbiting dots */
-.orbit {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  animation: spin 1.6s linear infinite;
-}
-
-.orbit span {
-  width: 14px;
-  height: 14px;
-  background: #ff6100;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.orbit span:nth-child(1) {
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-.orbit span:nth-child(2) {
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-/* Rotation Animation */
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* Loading Text */
-.loading-text {
-  color: #ff6100;
-  margin-top: 25px;
-  font-family: Poppins, Arial, sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center;
-}
-
-.loader-box {
-  text-align: center;
-}
-
-/* Demo Page Content */
-#page-content {
-  padding: 40px;
-}
 
 </style>
 </head>
@@ -102,6 +36,53 @@
 <body>
 
 <!-- PRELOADER -->
+
+<section class="about-section py-5">
+  <div class="container">
+    <div class="row g-4 align-items-stretch">
+
+      <!-- LEFT SIDE IMAGE -->
+      <div class="col-lg-6 d-flex">
+        <div class="about-img-wrapper w-100 h-100">
+          <img src="images/vfi" 
+               alt="IndTech Expo 2026" 
+               class="img-fluid w-100 h-100 object-fit-cover rounded-4">
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE CONTENT -->
+      <div class="col-lg-6 d-flex">
+        <div class="about-content w-100 h-100 p-4 p-lg-5 rounded-4 d-flex flex-column justify-content-center">
+
+          <h2 class="fw-bold mb-3" style="margin-top: -3rem;">About IndTech Expo 2026</h2>
+
+          <p style="font-size: 18px;text-align: justify;">
+            IndTech Expo 2026 is India’s premier platform showcasing cutting-edge
+          industrial technologies, automation, machinery, tools, and next-gen
+          manufacturing innovations. The expo brings together industry leaders,
+          manufacturers, suppliers, engineers, and decision-makers under one roof.The event serves as a powerful hub for technology exchange, business networking, product demonstrations, and knowledge sharing. With a strong focus on Industry 4.0, smart manufacturing, robotics, material handling, digital production systems, and sustainable industrial solutions, the expo empowers companies to accelerate growth and stay competitive in a rapidly evolving market.Visitors can experience live machinery demos, discover breakthrough technologies, interact with global brands, attend technical sessions, and unlock new sourcing opportunities. Whether you're a buyer, manufacturer, trader, distributor, industrial consultant, or technology provider, IndTech Expo 2026 offers unmatched opportunities to connect, collaborate, and scale innovation across multiple sectors.
+          </p>
+
+
+          <ul class="mt-3" style="font-size: 18px;">
+            <li>200+ Global Exhibitors</li>
+            <li>15,000+ Trade Visitors</li>
+            <li>Live Machinery Demonstrations</li>
+            <li>Smart Factory & Automation Pavilion</li>
+          </ul>
+
+          <div class="mt-5">
+            <a href="#" class="btn btn-primary px-4 py-2">Know More</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
 
 <!-- YOUR WEBSITE CONTENT -->
