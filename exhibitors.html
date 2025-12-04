@@ -513,7 +513,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <script>
-  emailjs.init("1N5Fpw-OrZpkDJwvp"); // Replace with your actual EmailJS public key
+  emailjs.init("i_FTYAserRxqhGzBL"); // Replace with your actual EmailJS public key
 
   document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
@@ -531,7 +531,7 @@
       stallArea: document.getElementById("stallArea").value,
     };
 
-    emailjs.send("service_mlwmog5", "template_4nfkqlv", templateParams)
+    emailjs.send("service_gxn0i9h", "template_vz0uxoh", templateParams)
       .then(function (response) {
         alert("Thank you for contacting us. We will get back to you soon.");
         document.getElementById("contactForm").reset();

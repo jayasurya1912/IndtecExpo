@@ -366,7 +366,7 @@
 
 
 <script>
-  emailjs.init("KMyyQryEe215wzBPG"); // Replace with your actual EmailJS public key
+  emailjs.init("i_FTYAserRxqhGzBL"); // Replace with your actual EmailJS public key
 
   document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
@@ -381,7 +381,7 @@
       city: document.getElementById("city").value,
     };
 
-    emailjs.send("service_0zhux7b", "template_9ubhhoh", templateParams)
+    emailjs.send("service_gxn0i9h", "template_peyh09c", templateParams)
       .then(function (response) {
         alert("Thank you for contacting us. We will get back to you soon.");
         document.getElementById("contactForm").reset();
