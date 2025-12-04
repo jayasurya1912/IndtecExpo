@@ -193,7 +193,7 @@ html, body {
     }
 
     .footer-logo {
-        width: 180px;
+        width: 150px;
         margin-bottom: 25px;
         background-color: white;
         padding: 10px;
@@ -1972,3 +1972,80 @@ html, body {
     height: 28vh;
   }
 }   
+  .contact-popup-content {
+      background: #06162f;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Fixed Close Button */
+    .popup-close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 999;
+      background: white;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      border: none;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .icon-box img {
+      width: 48px;
+      height: 48px;
+      background: white;
+      padding: 5px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      
+    }
+    .form-label
+    {
+      color: white;
+    }
+
+      .contact-popup-content {
+      background: #06162f;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Fixed Close Button */
+    .popup-close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 999;
+      background: white;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      border: none;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .icon-box img {
+      width: 48px;
+      height: 48px;
+      background: white;
+      padding: 5px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      
+    }
