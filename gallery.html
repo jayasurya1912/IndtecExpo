@@ -150,7 +150,7 @@
 
 
 
-<section class="gallery-section py-5 mt-5">
+<section class="gallery-section mt-5" >
   <div class="container">
     <h2 class="text-center fw-bold mb-4">Gallery Showcase</h2>
     
@@ -304,6 +304,81 @@
   </div>
 </section>
 
+
+
+
+<!-- YouTube Video Slider -->
+<!-- YouTube Video Slider -->
+<section class="yt-video-section container">
+  <h3 class="yt-video-heading">Event Highlights</h3>
+
+  <div class="row g-4 justify-content-center">
+
+    <!-- Video 1 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="yt-video-card">
+        <div class="ratio ratio-16x9">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/0DKRHRNIPcg?si=L3OwMGqAvJUheLDr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+       
+      </div>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="yt-video-card">
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GmPyxwAa6UI?si=eRM8__95fyfqCDIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      
+      </div>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="yt-video-card">
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/H7FAXEvX3nw?si=YB9yTDyGVpghoKj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+       
+      </div>
+    </div>
+
+    <!-- Video 4 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="yt-video-card">
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/D8SXE8JFUww?si=E1fp5ER7OGZQ-ju4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+       
+      </div>
+    </div>
+
+    <!-- Video 5 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="yt-video-card">
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qwLQ-Kpuw84?si=y_gGJEt5fwKD4EZq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+       
+      </div>
+    </div>
+
+    <!-- Video 6 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="yt-video-card">
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/51uQEK7ZQBo?si=jpsGuNg4643KjtGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+       
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
 <footer>
     <div class="container">
         <div class="row footer-wrapper g-4">
@@ -435,5 +510,16 @@ window.addEventListener("load", function () {
   }, 500);
 });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const firstSlide = document.querySelector(
+      "#videoCarousel .carousel-item.is-visible"
+    );
+    if (firstSlide) {
+      firstSlide.classList.add("active");
+    }
+  });
+</script>
+
 </body>
 </html>

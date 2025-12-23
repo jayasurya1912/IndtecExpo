@@ -2422,5 +2422,48 @@ p {
   }
 }
 
+.yt-video-section {
+  padding: 30px 15px;
+}
+
+.yt-video-heading {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.yt-video-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px;
+  height: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.yt-video-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
+}
+
+.yt-video-card iframe {
+  border-radius: 10px;
+  border: none;
+}
+
+.yt-video-title {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 12px;
+  font-size: 15px;
+  color: #222;
+}
+
+/* Mobile fix */
+@media (max-width: 576px) {
+  .yt-video-title {
+    font-size: 14px;
+  }
+}
 
 
