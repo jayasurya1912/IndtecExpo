@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exact Banner Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+
+  <style>
+
+    /* GLOBAL OVERFLOW FIX */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+    body {
+      font-family: "Poppins", sans-serif;
+      
+    }
+
+    /* HERO SECTION */
+    .heross-section {
+      position: relative;
+      overflow: hidden;
+      background: #008080;
+    }
+
+    /* PURPLE SHAPE */
+    .heross-shape {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 65%;
+      height: 100%;
+      background: #13294B;
+      clip-path: ellipse(90% 100% at 0% 50%);
+      z-index: 1;
+    }
+
+    .heross-content {
+      position: relative;
+      z-index: 2;
+      padding: 80px 0;
+    }
+
+    .heross-title {
+      color: #ffffff;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .heross-text {
+      color: white;
+      font-size: 15px;
+      max-width: 520px;
+      margin-bottom: 30px;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    .heross-btn {
+      border-radius: 6px;
+      padding: 10px 22px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .heross-btn-outline {
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      background: transparent;
+    }
+
+    .heross-btn-outline:hover {
+      background: #ffffff;
+      color: #5a1a6b;
+    }
+
+    .heross-img img {
+      max-width: 100%;
+      border-radius: 4px;
+      background-color: white;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 992px) {
+      .heross-shape {
+        width: 100%;
+        clip-path: ellipse(140% 100% at 50% 0%);
+      }
+
+      .heross-title {
+        font-size: 34px;
+        text-align: center;
+      }
+
+      .heross-text {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 2rem;
+      }
+
+      .heross-buttons {
+        justify-content: center;
+      }
+
+      .heross-img {
+        margin-top: 40px;
+        text-align: center;
+      }
+       
+      
+    }
+    
+    #heross-typing {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.heross-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+  /* Section */
+    .exec-section {
+      padding: 80px 0;
+    }
+
+    /* Image */
+    .exec-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+       border: black 3px solid;
+      background-color:#072f54;
+      padding: 10px;
+     
+    }
+
+    /* Content */
+    .exec-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .exec-title {
+      font-size: 36px;
+      font-weight: 600;
+      color: #111;
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    .exec-text {
+      font-size: 14px;
+      color: black;
+      line-height: 1.7;
+      max-width: 480px;
+      margin-bottom: 25px;
+      text-align: justify;
+    }
+
+    .exec-btn {
+      background: #13294B;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 6px;
+      border: none;
+    }
+
+    .exec-btn:hover {
+      background: #008080;
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .exec-section {
+        padding: 60px 0;
+      }
+
+      .exec-title {
+        font-size: 30px;
+      }
+
+      .exec-text {
+        max-width: 100%;
+      }
+
+      .exec-img {
+        margin-bottom: 30px;
+      }
+    }
+    .fullservice-section {
+  background: #13294B;
+  color: #ffffff;
+}
+
+.fullservice-top {
+  font-size: 13px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  color: white;
+}
+
+.fullservice-title {
+  font-size: 42px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.fullservice-sub {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.fullservice-desc {
+  font-size: 13px;
+  opacity: 0.85;
+  max-width: 900px;
+  margin: 0 auto 8px;
+}
+
+.service-card {
+  background: #ffffff;
+  color: #111;
+  border-radius: 22px;
+  padding: 25px;
+  height: 100%;
+  text-align: center;
+
+  /* IMPORTANT */
+  border: 4px solid transparent;
+  transition: 
+    border-color 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.service-card:hover {
+  border-color: #008080;
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 128, 128, 0.25);
+}
+
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.service-card h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fullservice-title {
+    font-size: 32px;
+  }
+}
+
+  .strategy-wrap {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .strategy-title {
+      font-size: 38px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .strategy-subtitle {
+      font-size: 15px;
+      color: #555;
+      max-width: 760px;
+      margin: 0 auto 50px;
+      line-height: 1.6;
+    }
+
+    /* CARDS */
+    .strategy-card {
+      background: #008080;
+      color: white;
+      border-radius: 12px;
+      padding: 30px 24px;
+      height: 100%;
+      text-align: left;
+   
+    }
+
+    .strategy-icon {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .strategy-card h5 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+
+    .strategy-card p {
+      font-size: 16px;
+      color: white;
+      line-height: 1.5;
+      margin-bottom: 0;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .strategy-title {
+        font-size: 30px;
+      }
+    }
+    /* SECTION */
+/* SECTION WITH BACKGROUND IMAGE */
+.kws-section {
+  position: relative;
+  padding: 100px 0;
+  background-image: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* DARK OVERLAY */
+.kws-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+/* CONTENT BOX */
+.kws-content {
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  padding: 50px 55px;
+  border-left: 5px solid #13294B;
+}
+
+/* TITLE */
+.kws-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 22px;
+  color: #111;
+}
+
+/* TEXT */
+.kws-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: black;
+  margin-bottom: 18px;
+}
+
+/* BUTTON */
+.kws-btn {
+  background: #13294B;
+  color: #fff;
+  padding: 12px 26px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.kws-btn:hover {
+  background: #008080;
+  color: #fff;
+}
+
+/* ANIMATION */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.animate-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .kws-content {
+    padding: 35px 25px;
+  }
+
+  .kws-title {
+    font-size: 28px;
+  }
+}
+
+.exec-process-section {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.exec-main-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.exec-intro {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+.exec-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 28px 0 12px;
+  color: #111;
+}
+
+/* PROCESS LIST */
+.exec-process-list {
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+.exec-process-list li {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* BENEFITS */
+.exec-benefits-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 22px;
+}
+
+.exec-benefits-list li {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 22px;
+}
+
+.exec-benefits-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #000;
+  font-weight: 600;
+}
+
+/* CTA BUTTON */
+.exec-cta-btn {
+  background: #13294B;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.exec-cta-btn:hover {
+  background: #008080;
+  color: #fff;
+}
+
+/* IMAGE */
+.exec-illustration {
+  max-width: 100%;
+  height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .exec-main-title {
+    font-size: 28px;
+  }
+}
+.hire-models-section {
+  padding: 90px 0;
+  background: url('images/aboutban.png');
+}
+
+.hire-features {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hire-feature-card {
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.28);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 2rem;
+}
+
+.hire-icon {
+  width: 48px;          /* FIXED WIDTH */
+  height: 48px;         /* FIXED HEIGHT */
+  min-width: 48px;      /* prevents shrinking */
+  min-height: 48px;
+
+  background: #1fb886;
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;      /* SAME icon size */
+  line-height: 1;       /* IMPORTANT */
+}
+
+.hire-feature-card p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.hire-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hire-features {
+    margin-bottom: 30px;
+  }
+}
+
+.kenalps-recruit-section {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.kenalps-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.kenalps-text {
+  font-size: 17px;
+  line-height: 1.8;
+  color: black;
+  margin-bottom: 18px;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.kenalps-list {
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+.kenalps-list li {
+  font-size: 17px;
+  color: black;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.kenalps-btn {
+  background: #13294B;
+  color: #ffffff;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.kenalps-btn:hover {
+  background: #008080;
+  color: #ffffff;
+}
+
+.kenalps-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .kenalps-title {
+    font-size: 28px;
+  }
+}
+
+.expertise-section {
+  padding: 80px 0;
+  background: #13294B;
+ 
+}
+
+.expertise-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 12px;
+   color: white;
+}
+
+.expertise-sub {
+  font-size: 15px;
+  color: white;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* MARQUEE */
+.expertise-marquee {
+  overflow: hidden;
+  position: relative;
+}
+
+.expertise-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+}
+
+/* PAUSE ON HOVER */
+.expertise-marquee:hover .expertise-track {
+  animation-play-state: paused;
+}
+
+/* BOX */
+.expertise-box {
+  background: #ffffff;
+  padding: 16px 22px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+
+.expertise-box i {
+  font-size: 20px;
+  color: #1fb886;
+}
+
+/* ANIMATION */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .expertise-title {
+    font-size: 28px;
+  }
+
+  .expertise-track {
+    animation-duration: 40s;
+  }
+}
+
+.kenalps-footer-banner {
+  background: url('images/aboutban.png');
+  padding: 70px 0;
+  color: #ffffff;
+}
+
+.kenalps-footer-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.kenalps-footer-text {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.95;
+  margin-bottom: 10px;
+}
+
+.kenalps-footer-btn {
+  background: #ffffff;
+  color: #0b3d2e;
+  padding: 14px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.kenalps-footer-btn:hover {
+  background: #f1f1f1;
+  color: #0b3d2e;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .kenalps-footer-title {
+    font-size: 28px;
+  }
+
+  .kenalps-footer-banner {
+    text-align: center;
+  }
+}
+
+
+
+  </style>
+</head>
+
+<body>
+
+<section class="heross-section">
+  <div class="heross-shape"></div>
+
+  <div class="container heross-content">
+    <div class="row align-items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+        <h1 class="heross-title">
+          Find Talent That Fuels Growth with Kenalps Consultancy Solutions
+        </h1>
+
+        <p class="heross-text">
+          At Kenalps Consultancy Solutions, we believe great talent builds great companies. The right
+          hire doesn’t just fill a position — they transform possibilities into progress. Whether you need
+          a single specialist, an entire team, or visionary leaders to drive change, we help you find people
+          who truly make a difference.
+
+        </p>
+
+        <div class="d-flex gap-3 heross-buttons">
+          <a href="#" class="btn heross-btn btn-light">Individuals</a>
+          <a href="#" class="btn heross-btn heross-btn-outline">Organizations</a>
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-6 heross-img text-end">
+        <img src="#" alt="Working Woman">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="container text-center mt-5">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 id="heross-typing"></h2>
+      <p>Recruitment today is about connection, not just collection. At Kenalps, we blend experience,technology, and human insight to create <br> recruitment strategies that move with your business— and deliver results that last.</p>
+    </div>
+  </div>
+</div>
+
+
+<section class="exec-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- LEFT IMAGE -->
+      <div class="col-lg-6 exec-img">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+             alt="Executive Search">
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="col-lg-6">
+        <p class="exec-label">Executive Search</p>
+
+        <h2 class="exec-title">
+          We Start with You
+        </h2>
+
+        <p class="exec-text">
+          Every organization has its own story, culture, and goals. That’s why we take the time tounderstand what makes yours unique. From project-based staffing to long-term hiring, weshape every solution around your business needs.
+
+        </p>
+
+        <a href="#" class="btn exec-btn">
+          Explore Executive Search
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="exec-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- LEFT IMAGE -->
+     
+
+      <!-- RIGHT CONTENT -->
+      <div class="col-lg-6">
+        <p class="exec-label">Executive Search</p>
+
+        <h2 class="exec-title">
+         Your Industry. Our Expertise.
+        </h2>
+
+        <p class="exec-text">
+          At Kenalps Consultancy Solutions, we understand the dynamic business landscape of the
+UAE and GCC. Our consultants bring deep expertise across key sectors — including <b> Oil &
+Gas, Construction, EPC/EPCM, Engineering Consultancy, Real Estate, Manufacturing,
+Logistics, Chemical Substances, Tourism and Hospitality, Event and Exhibition,
+Financial Services, Corporate Learning, Technology, Fintech, and Data Science.</b>
+By combining regional insights with advanced talent acquisition tools, we connect you with
+professionals who not only meet the job requirements but also align seamlessly with your
+company’s vision, values, and culture.
+
+        </p>
+
+        <a href="#" class="btn exec-btn">
+          Explore Executive Search
+        </a>
+      </div>
+
+
+       <div class="col-lg-6 exec-img">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+             alt="Executive Search">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="fullservice-section py-5">
+  <div class="container text-center">
+
+    <!-- Heading -->
+    <p class="fullservice-top" style="color: white;">OUR RECRUITMENT SOLUTIONS</p>
+    <h2 class="fullservice-title">End-to-End Hiring Expertise</h2>
+
+    <p class="fullservice-sub">
+     Recruitment Marketing
+    </p>
+
+    <p class="fullservice-desc">
+      We help you build a strong employer brand and connect with the right audience through smartrecruitment campaigns <br> so the best candidates come to you.
+
+    </p>
+
+    <!-- Cards -->
+    <div class="row g-4 mt-5">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="">
+          <h5>Executive Search</h5>
+          <p>
+            We connect you with forward-thinking leaders who bring vision,
+            strategy, and fresh energy to your business — leaders who inspire
+            transformation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df" alt="">
+          <h5>Interim & Project-Based Hiring</h5>
+          <p>
+            Our interim professionals and consultants step in from day one to
+            lead projects, manage transitions, and ensure business continuity
+            when it matters most.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c" alt="">
+          <h5>Permanent Recruitment</h5>
+          <p>
+            We identify professionals who align with your goals and values —
+            ensuring every hire adds long-term strength to your organization.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1523952578875-e6bb18b26645" alt="">
+          <h5>White-Collar & Blue-Collar Recruitment</h5>
+          <p>
+            From corporate professionals and technical experts to skilled and
+            semi-skilled labor, we deliver the right talent with efficiency,
+            reliability, and cultural fit.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" alt="">
+          <h5>Recruitment Process Outsourcing (RPO)</h5>
+          <p>
+            Let Kenalps manage your complete recruitment lifecycle — from
+            attracting top talent to optimizing hiring costs — so you can
+            focus on growth.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837" alt="">
+          <h5>Hire–Train–Deploy</h5>
+          <p>
+            We bridge skill gaps by training job-ready professionals and
+            deploying them to perform effectively from day one.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="strategy-wrap">
+  <div class="container">
+
+    <!-- Heading -->
+    <h2 class="strategy-title">Why Partner with Kenalps Consultancy Solutions</h2>
+
+    <p class="strategy-subtitle">
+      At Kenalps, we don’t just hire — we partner, plan, and grow with you.
+      Our approach blends data, creativity, and genuine human connection to
+      deliver recruitment experiences that feel personal and purposeful.
+    </p>
+
+    <!-- Cards -->
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-12">
+        <div class="strategy-card">
+          <i class="bi bi-globe strategy-icon"></i>
+          <h5>Global Perspective,<br>Local Expertise</h5>
+          <p>
+            Kenalps Consultancy Solutions combines a worldwide outlook with deep
+            understanding of local markets. Wherever your business grows, we
+            help you find the talent to match your ambitions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-12">
+        <div class="strategy-card">
+          <i class="bi bi-people strategy-icon"></i>
+          <h5>Built on Relationships</h5>
+          <p>
+            We value people over processes. Our success comes from building
+            trusted, long-term relationships with clients and candidates alike —
+            because great partnerships create great outcomes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-12">
+        <div class="strategy-card">
+          <i class="bi bi-lightbulb strategy-icon"></i>
+          <h5>Real People.<br>Real Impact. Real Growth.</h5>
+          <p>
+            Our recruiters are industry insiders who understand what drives
+            today’s professionals. With empathy, strategy, and insight, we help
+            you discover talent that’s not just skilled — but inspired.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="strategy-card">
+          <i class="bi bi-briefcase strategy-icon"></i>
+          <h5>Beyond Recruitment</h5>
+          <p>
+            Our work doesn’t end at hiring. We support new hires through
+            onboarding, mentoring, and career growth initiatives — helping
+            organizations and individuals succeed together.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="kws-section">
+  <div class="kws-overlay"></div>
+
+  <div class="container position-relative">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+
+        <div class="kws-content animate-on-scroll">
+          <h2 class="kws-title">Strategic Workforce Solutions</h2>
+
+          <p class="kws-text">
+            At first glance, many recruitment firms may seem identical — promising
+            the same results and following the same formulas. But at
+            <strong>Kenalps Consultancy Solutions</strong>, our difference runs deeper.
+          </p>
+
+          <p class="kws-text">
+            We were founded on a simple yet powerful belief — that recruitment should
+            be about people, not positions. Our mission is to build meaningful
+            connections that go beyond transactions and foster long-term success
+            for both employers and professionals.
+          </p>
+
+          <p class="kws-text">
+            At Kenalps, people always come first. We take pride in creating genuine
+            relationships and delivering staffing strategies that drive real impact.
+          </p>
+
+          <p class="kws-text">
+            Connect with us today to experience a more personal, transparent, and
+            effective way of building your workforce.
+          </p>
+
+          <a href="#" class="btn kws-btn mt-3">Connect With Us</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="exec-process-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-7">
+
+        <h2 class="exec-main-title">Your End-to-End Recruitment Partner</h2>
+
+        <p class="exec-intro">
+          Partnering with a recruitment expert you can trust makes all the difference.
+          At <strong>Kenalps Consultancy Solutions</strong>, we bridge the gap between
+          ambitious organizations and exceptional professionals through a structured,
+          efficient, and collaborative hiring process.
+        </p>
+
+        <!-- PROCESS -->
+        <h5 class="exec-subtitle">Our Executive Search Process</h5>
+        <ul class="exec-process-list">
+          <li><strong>Understanding Client Requirements</strong> – Business goals, cultural alignment, and leadership competencies.</li>
+          <li><strong>Talent Mapping & Market Research</strong> – Identify the best potential candidates globally.</li>
+          <li><strong>Approach & Assessment</strong> – Engage with leaders, evaluate expertise and cultural fit.</li>
+          <li><strong>Shortlisting & Presentation</strong> – Provide a curated list of top candidates.</li>
+          <li><strong>Negotiation & Onboarding Support</strong> – Smooth transition for the selected executive.</li>
+        </ul>
+
+        <!-- BENEFITS -->
+        <h5 class="exec-subtitle">Benefits of Partnering with Best HR Consultancy</h5>
+        <ul class="exec-benefits-list">
+          <li>Access to passive and high-performing leadership talent</li>
+          <li>Reduced time-to-hire for critical executive roles</li>
+          <li>Strategic hiring for long-term success</li>
+        </ul>
+
+        <p class="exec-intro">
+          Our team brings deep industry knowledge across various industries —
+          ensuring precision in every placement, whether you need one specialist
+          or an entire department.
+        </p>
+
+        <a href="#" class="btn exec-cta-btn mt-3">Contact Us</a>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-5 text-center mt-4 mt-lg-0">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+             alt="Recruitment Illustration"
+             class="exec-illustration">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="hire-models-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT FEATURES -->
+      <div class="col-lg-3 col-md-6 hire-features">
+
+        <div class="hire-feature-card">
+          <div class="hire-icon"><i class="bi bi-building"></i></div>
+          <p>Extensive Industry Expertise</p>
+        </div>
+
+        <div class="hire-feature-card">
+          <div class="hire-icon"><i class="bi bi-sliders"></i></div>
+          <p>Tailored HR Solutions</p>
+        </div>
+
+        <div class="hire-feature-card">
+          <div class="hire-icon"><i class="bi bi-people"></i></div>
+          <p>Focus on Employee Engagement & Development</p>
+        </div>
+
+        <div class="hire-feature-card">
+          <div class="hire-icon"><i class="bi bi-currency-rupee"></i></div>
+          <p>Price Advantage</p>
+        </div>
+
+        <div class="hire-feature-card">
+          <div class="hire-icon"><i class="bi bi-shield-check"></i></div>
+          <p>Reliable Services & Enhanced Support</p>
+        </div>
+
+      </div>
+
+      <!-- CENTER IMAGE -->
+      <div class="col-lg-6 text-center hire-center">
+        <img src="/mnt/data/d00ca29d-f984-4607-b7ac-7dc24e52444d.png"
+             alt="HR Professional"
+             class="hire-image">
+      </div>
+
+      <!-- RIGHT FEATURES -->
+      <div class="col-lg-3 col-md-6 hire-features">
+
+        <div class="hire-feature-card">
+          <div class="hire-icon"><i class="bi bi-exclamation-triangle"></i></div>
+          <p>Proactive Compliance & Risk Management</p>
+        </div>
+
+        <div class="hire-feature-card">
+          <div class="hire-icon"><i class="bi bi-person"></i></div>
+          <p>Strategic HR Partnership</p>
+        </div>
+
+        <div class="hire-feature-card">
+          <div class="hire-icon"><i class="bi bi-bar-chart"></i></div>
+          <p>Data-Driven Insights</p>
+        </div>
+
+        <div class="hire-feature-card">
+          <div class="hire-icon"><i class="bi bi-trophy"></i></div>
+          <p>Commitment to Client Success</p>
+        </div>
+
+        <div class="hire-feature-card">
+          <div class="hire-icon"><i class="bi bi-laptop"></i></div>
+          <p>Technology-Driven Solutions</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="kenalps-recruit-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-7">
+
+        <h2 class="kenalps-title">
+          Why Partner with Kenalps Consultancy Solutions
+        </h2>
+
+        <p class="kenalps-text">
+          Choosing Kenalps means choosing a recruitment partner who values quality,
+          trust, and relationships above all. We blend data-driven strategy with
+          human understanding to create lasting connections between companies and talent.
+        </p>
+
+        <p class="kenalps-text">
+          Here’s what makes us different:
+        </p>
+
+        <ul class="kenalps-list">
+          <li>We take the time to understand your business, culture, and people.</li>
+          <li>We balance advanced recruitment tools with authentic human insight.</li>
+          <li>We approach every mandate — big or small — with urgency and precision.</li>
+          <li>We prioritize relationships and long-term partnerships over one-time transactions.</li>
+        </ul>
+
+        <p class="kenalps-text">
+          At <strong>Kenalps Consultancy Solutions</strong>, we don’t just connect
+          employers and candidates — we create opportunities that empower people,
+          strengthen teams, and drive organizations forward.
+        </p>
+
+        <a href="#" class="btn kenalps-btn mt-3">Contact Us</a>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-5 text-center mt-4 mt-lg-0">
+        <img
+          src="/mnt/data/a211358e-c294-4459-8633-28fa8b5007af.png"
+          alt="Recruitment Illustration"
+          class="kenalps-img"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="expertise-section">
+  <div class="container">
+
+    <h2 class="expertise-title text-center">Areas of Expertise</h2>
+    <p class="expertise-sub text-center">
+      At Kenalps Consultancy Solutions, we deliver a specialized, sector-focused approach
+      across a wide range of industries:
+    </p>
+
+    <!-- MARQUEE -->
+    <div class="expertise-marquee">
+      <div class="expertise-track">
+
+        <!-- BOXES (repeat once for smooth loop) -->
+        <div class="expertise-box"><i class="bi bi-fuel-pump"></i>Oil & Gas, Construction & Engineering</div>
+        <div class="expertise-box"><i class="bi bi-building"></i>Architecture & Design</div>
+        <div class="expertise-box"><i class="bi bi-house-gear"></i>Real Estate & Facilities Management</div>
+        <div class="expertise-box"><i class="bi bi-truck"></i>Supply Chain, Manufacturing & Logistics</div>
+        <div class="expertise-box"><i class="bi bi-droplet"></i>Chemical & Industrial Sectors</div>
+        <div class="expertise-box"><i class="bi bi-calculator"></i>Accounting & Finance</div>
+        <div class="expertise-box"><i class="bi bi-bank"></i>Financial Services</div>
+        <div class="expertise-box"><i class="bi bi-shield-check"></i>Governance, Risk & Compliance</div>
+        <div class="expertise-box"><i class="bi bi-people"></i>Human Resources & Talent Management</div>
+        <div class="expertise-box"><i class="bi bi-laptop"></i>Information Technology</div>
+        <div class="expertise-box"><i class="bi bi-journal-text"></i>Legal (In-House & Private Practice)</div>
+        <div class="expertise-box"><i class="bi bi-heart-pulse"></i>Healthcare & Life Sciences</div>
+        <div class="expertise-box"><i class="bi bi-shop"></i>Retail & Hospitality</div>
+        <div class="expertise-box"><i class="bi bi-megaphone"></i>Sales & Marketing</div>
+        <div class="expertise-box"><i class="bi bi-calendar-event"></i>Events, Exhibitions & Corporate Learning</div>
+        <div class="expertise-box"><i class="bi bi-flag"></i>Emiratisation Initiatives</div>
+        <div class="expertise-box"><i class="bi bi-briefcase"></i>Professional Support Services</div>
+
+        <!-- DUPLICATE FOR INFINITE SCROLL -->
+        <div class="expertise-box"><i class="bi bi-fuel-pump"></i>Oil & Gas, Construction & Engineering</div>
+        <div class="expertise-box"><i class="bi bi-building"></i>Architecture & Design</div>
+        <div class="expertise-box"><i class="bi bi-house-gear"></i>Real Estate & Facilities Management</div>
+        <div class="expertise-box"><i class="bi bi-truck"></i>Supply Chain, Manufacturing & Logistics</div>
+        <div class="expertise-box"><i class="bi bi-droplet"></i>Chemical & Industrial Sectors</div>
+        <div class="expertise-box"><i class="bi bi-calculator"></i>Accounting & Finance</div>
+        <div class="expertise-box"><i class="bi bi-bank"></i>Financial Services</div>
+        <div class="expertise-box"><i class="bi bi-shield-check"></i>Governance, Risk & Compliance</div>
+        <div class="expertise-box"><i class="bi bi-people"></i>Human Resources & Talent Management</div>
+        <div class="expertise-box"><i class="bi bi-laptop"></i>Information Technology</div>
+        <div class="expertise-box"><i class="bi bi-journal-text"></i>Legal (In-House & Private Practice)</div>
+        <div class="expertise-box"><i class="bi bi-heart-pulse"></i>Healthcare & Life Sciences</div>
+        <div class="expertise-box"><i class="bi bi-shop"></i>Retail & Hospitality</div>
+        <div class="expertise-box"><i class="bi bi-megaphone"></i>Sales & Marketing</div>
+        <div class="expertise-box"><i class="bi bi-calendar-event"></i>Events, Exhibitions & Corporate Learning</div>
+        <div class="expertise-box"><i class="bi bi-flag"></i>Emiratisation Initiatives</div>
+        <div class="expertise-box"><i class="bi bi-briefcase"></i>Professional Support Services</div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="kenalps-footer-banner">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-8">
+        <h2 class="kenalps-footer-title">Join Hands with Kenalps</h2>
+
+        <p class="kenalps-footer-text">
+          At Kenalps Consultancy Solutions, we don’t just connect employers and candidates —
+          we create opportunities that empower people, strengthen teams, and drive
+          organizations forward.
+        </p>
+
+        <p class="kenalps-footer-text">
+          Partner with us to build a workforce that powers progress across the
+          UAE and GCC.
+        </p>
+      </div>
+
+      <!-- RIGHT CTA -->
+      <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+        <a href="#" class="btn kenalps-footer-btn">Get in Touch</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+  const text = "Smart Hiring for a Future-Ready Workforce";
+  const typingSpeed = 70;
+  const deletingSpeed = 40;
+  const pauseAfterTyping = 1500;
+  const pauseAfterDeleting = 500;
+
+  const target = document.getElementById("heross-typing");
+
+  let index = 0;
+  let isDeleting = false;
+
+  function typeEffect() {
+    if (!isDeleting && index < text.length) {
+      target.innerHTML = text.substring(0, index + 1) + '<span class="heross-cursor">|</span>';
+      index++;
+      setTimeout(typeEffect, typingSpeed);
+
+    } else if (isDeleting && index > 0) {
+      target.innerHTML = text.substring(0, index - 1) + '<span class="heross-cursor">|</span>';
+      index--;
+      setTimeout(typeEffect, deletingSpeed);
+
+    } else if (!isDeleting && index === text.length) {
+      setTimeout(() => isDeleting = true, pauseAfterTyping);
+      setTimeout(typeEffect, pauseAfterTyping);
+
+    } else if (isDeleting && index === 0) {
+      isDeleting = false;
+      setTimeout(typeEffect, pauseAfterDeleting);
+    }
+  }
+
+  typeEffect();
+</script>
+
+<script>
+  const animatedElements = document.querySelectorAll(".animate-on-scroll");
+
+  function scrollAnimation() {
+    animatedElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        el.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", scrollAnimation);
+  scrollAnimation();
+</script>
+
+<style>
+
+  p
+  {
+    background-color: #f1f1f1;
+  }
+</style>
+
+
+</body>
+</html>
