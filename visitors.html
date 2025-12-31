@@ -51,7 +51,7 @@
           <h3 class="fw-bold text-white mb-3">Book Your Space</h3>
            <p class="text-white">Thank you for showing interest Our team will contact you shortly</p>
 
-          <form id="contactForm">
+          <form id="contactForms">
             <div class="mb-3">
               <label class="form-label text-white">Full Name</label>
               <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
@@ -142,6 +142,7 @@
   </a>
 </li>
         <li class="nav-item"><a class="nav-link"  href="contact.html">CONTACT</a></li>
+         <li class="nav-item"><a class="nav-link" href="#"style="background-color: #ff6100;color: white;border-radius: 15px;"data-bs-toggle="modal"data-bs-target="#contactPopup">BOOK YOUR SPACE</a></li>
 
       </ul>
     </div>
@@ -210,7 +211,7 @@
   <div class="container" data-aos="fade-up" data-aos-duration="700" >
     <div class="form-container">
       <h2 class="form-title text-center mb-4">Visitor Registration Form</h2>
-      <form id="contactForm">
+      <form id="contactFormss">
   <div class="row">
     <div class="mb-3 col-md-6">
       <label class="form-label">First Name</label>
@@ -504,7 +505,7 @@
 <script>
   emailjs.init("i_FTYAserRxqhGzBL"); // Replace with your actual EmailJS public key
 
-  document.getElementById("contactForm").addEventListener("submit", function (e) {
+  document.getElementById("contactFormss").addEventListener("submit", function (e) {
     e.preventDefault();
 
     const templateParams = {
@@ -520,7 +521,7 @@
     emailjs.send("service_gxn0i9h", "template_peyh09c", templateParams)
       .then(function (response) {
         alert("Your message has been received. Our team will get back to you shortly.");
-        document.getElementById("contactForm").reset();
+        document.getElementById("contactFormss").reset();
       }, function (error) {
         alert("Failed to send email: " + JSON.stringify(error));
       });
@@ -549,5 +550,6 @@ window.addEventListener("load", function () {
   }, 500);
 });
 </script>
+
 </body>
 </html>
